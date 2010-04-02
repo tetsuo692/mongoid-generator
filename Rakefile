@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "mongoid-generator"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Mongoid orm generator}
+    gem.description = %Q{Mongoid orm generator for rails 3}
     gem.email = "guillaume.belleguic@cixi.eu"
     gem.homepage = "http://github.com/tetsuo692/mongoid-generator"
     gem.authors = ["guillaume belleguic"]
