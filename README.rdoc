@@ -1,6 +1,6 @@
 = mongoid-generator
 
-Description goes here.
+A basic mongoid orm generator for rails 3
 
 == Note on Patches/Pull Requests
  
