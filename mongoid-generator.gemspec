@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
      "lib/generators/mongoid/model/model_generator.rb",
      "lib/generators/mongoid/model/templates/model.rb",
      "lib/mongoid-generator.rb",
+     "mongoid-generator.gemspec",
      "test/helper.rb",
      "test/test_mongoid-generator.rb"
   ]
