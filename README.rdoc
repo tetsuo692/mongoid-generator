@@ -1,7 +1,26 @@
 = mongoid-generator
 
+== Description :
 A basic mongoid orm generator for rails 3
 
+== Synopsis :
+
+In config/application.rb :
+
+  config.generators do |g|
+    g.orm             :mongoid
+    g.template_engine :erb
+    g.test_framework  :test_unit, :fixture => true
+  end
+
+== Usage :
+
+./script/rails generate model [Model] [field:type,]
+
+Options :
+  * --timesstamps=[true|false] default true
+  * --versionnning=[true|false] default false
+  
 == Note on Patches/Pull Requests
  
 * Fork the project.
