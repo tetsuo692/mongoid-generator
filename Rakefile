@@ -10,6 +10,7 @@ begin
     gem.email = "guillaume.belleguic@cixi.eu"
     gem.homepage = "http://github.com/tetsuo692/mongoid-generator"
     gem.authors = ["guillaume belleguic"]
+    gem.add_dependency('rails', "3.0.0.beta")
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

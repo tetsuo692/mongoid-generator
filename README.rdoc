@@ -15,7 +15,7 @@ In config/application.rb :
 
 == Usage :
 
-./script/rails generate model [Model] [field:type,]
+  ./script/rails generate model [Model] [field:type,]
 
 Options :
   * --timesstamps=[true|false] default true
