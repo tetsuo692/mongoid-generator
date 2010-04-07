@@ -10,6 +10,6 @@ class <%= class_name %><%= "< #{options[:parent].classify}" if options[:parent] 
   <% end %>
 <% end -%>
 <% attributes.each do |attribute| -%>
-  field :<%= attribute.name %>, :type => <%= attribute.type_class %>
+  field :<%= attribute.name %>, :type => <%= attribute.type %>
 <% end -%>
 end
