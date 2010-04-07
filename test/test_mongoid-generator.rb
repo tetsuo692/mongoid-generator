@@ -1,15 +1,19 @@
 require 'helper'
-require 'generators/mongoid'
-class TestMongoidGenerator < Test::Unit::TestCase
-  include MongoidGenerators::TestHelper
-  
+require 'generators/mongoid/model/model_generator'
+
+class MongoidGeneratorTest < Test::Unit::TestCase
   def setup
     @destination = File.join('tmp', 'test_app')
-    @source = Mongoid::Generators::Base.source_root
-    Mongoid::Generators::Base.start(['model', 'Account'], :destination_root => @destination)
+    @source = Mongoid::Generators::ModelGenerator.source_root
+    
+    Mongoid::Generators::ModelGenerator.start(['Account'], :destination => @source)
   end
   
-  def test_something
-    flunk "failed"
+  def teardown
+    FileUtils.rm_rf(@destination)
+  end
+  
+  def test_first_test
+    assert File.exists?(File.join(@destination, 'app', 'model', 'account.rb'))
   end
 end
