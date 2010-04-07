@@ -1,4 +1,5 @@
 class <%= class_name %><%= "< #{options[:parent].classify}" if options[:parent] %>
+  
 <% unless options[:parent] -%>
   include Mongoid::Document
   <% if options[:timestamps] %> 
