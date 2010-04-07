@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{mongoid-generator}
-  s.version = "0.0.1"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["guillaume belleguic"]
-  s.date = %q{2010-04-02}
+  s.date = %q{2010-04-07}
   s.description = %q{Mongoid orm generator for rails 3}
   s.email = %q{guillaume.belleguic@cixi.eu}
   s.extra_rdoc_files = [
@@ -46,9 +46,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<rails>, ["= 3.0.0.beta"])
     else
+      s.add_dependency(%q<rails>, ["= 3.0.0.beta"])
     end
   else
+    s.add_dependency(%q<rails>, ["= 3.0.0.beta"])
   end
 end
 
