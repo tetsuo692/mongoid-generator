@@ -19,7 +19,7 @@ In config/application.rb :
 
 Options :
   * --timesstamps=[true|false] default true
-  * --versionnning=[true|false] default false
+  * --versioning=[true|false] default false
   
 == Note on Patches/Pull Requests
  
