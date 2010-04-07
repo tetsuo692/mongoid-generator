@@ -10,6 +10,6 @@ class <%= class_name %><%= "< #{options[:parent].classify}" if options[:parent] 
   field :<%= attribute.name %>, :type => <%= attribute.type_class %>
 <% end -%>
 <% attributes.select{|attr| attr.reference? }.each do |attribute| -%>
-  belongs_to :<%= attribute.name%>, :inverse_of => :<%= class_name.pluralize %>
+  belongs_to :<%= attribute.name%>, :inverse_of => :<%= class_name.tableize %>
 <% end -%>
 end
