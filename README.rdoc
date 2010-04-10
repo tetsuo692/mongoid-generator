@@ -1,5 +1,8 @@
 = mongoid-generator
-
+== Notes:
+Mongoid  2.0.0.beta2 add its own generators for rails3.
+This project is over.
+ * http://github.com/durran/mongoid
 == Description :
 A basic mongoid orm generator for rails 3
 
